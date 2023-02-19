@@ -25,7 +25,7 @@
 
   <body data-spy="scroll" data-target=".navbar">
 
-    <div class="navbar navbar-fixed-top jumbotron3">
+    <div class="navbar navbar-fixed-top navbar-light" style="background-color: #ffff00;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
@@ -35,16 +35,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a href="#home" style="color:white" class="navbar-brand"><i class="ios ion-ios-home-outline fa-lg"></i> Home</a>
+              <a href="#home" style="color:black" class="navbar-brand"><i class="ios ion-ios-home-outline fa-lg"></i> Home</a>
             </div>
           </div>
           <div class="col-md-9">
             <div class="navbar-collapse collapse" id="navbar-main">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#news" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'news']);"><span class="ios ion-ios-paper-outline fa-lg"></span> News</a></li>
-                <li><a href="#projects" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'projects']);"><span class="ios ion-ios-pulse fa-lg"></span> Projects</a></li>
-                <li><a href="#publications" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'publications']);"><span class="ion-ios-book-outline fa-lg"></span> Publications</a></li>
-                <li><a href="#work" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'work']);"><span class="ios ion-ios-people-outline fa-lg"></span> Work Experience</a></li>
+                <li><a href="#news" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'news']);"><span class="ios ion-ios-paper-outline fa-lg"></span> News</a></li>
+                <li><a href="#projects" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'projects']);"><span class="ios ion-ios-pulse fa-lg"></span> Projects</a></li>
+                <li><a href="#publications" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'publications']);"><span class="ion-ios-book-outline fa-lg"></span> Publications</a></li>
+                <li><a href="#work" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'work']);"><span class="ios ion-ios-people-outline fa-lg"></span> Work Experience</a></li>
               </ul>
             </div>
           </div>
@@ -60,7 +60,7 @@
       <div id="intro" class="container-fluid" style="color:black; padding-top: 10px">
         <div class="row">
           <div class="col-md-3">
-            <center><a><img src="images/Bing.JPG" class="img-responsive" width="150" alt="[Bing Zhou]"/></a></center>
+            <center><a><img src="images/Bing_snap.jpeg" class="img-responsive" width="150" alt="[Bing Zhou]"/></a></center>
             <center><p style="padding-top: 20px"><a class="btn btn-primary btn-sm" width="150" href="pdf/Bing_CV.pdf">&nbsp;<i class="fa fa-file-pdf-o  fa-fw"></i> Bing Zhou CV</a></p></center>
           </div>
           <div class="col-md-9">
@@ -190,24 +190,71 @@
         </div>
         
 
-
-
         <div class="col-md-9">
           <div class="sectionProjects">
             <h2 id="projects" class="page-header"><i class="ios ion-ios-pulse fa-lg"></i> Projects</h2>
 
-<div class="panel panel-default">
+            <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">Fine-Grained Visual Recognition for AR Self-Assist Technical Support Demo</h3>
+                <h3 class="panel-title">AO-Finger: Hands-free Fine-grained Finger Gesture Recognition via Acoustic-Optic Sensor Fusing</h3>
               </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <iframe src="https://www.youtube.com/embed/n1Uw0ZCLNxQ" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
+                    <a class="btn btn-primary btn-sm" href="pdf/ao-finger.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> CHI'23</a>
+                    <!---<<a class="btn btn-primary btn-sm" href="" style="font-size:14px"><img src="images/ppt.png" width="18" /> Slides</a>
+                    </p></center>--->
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      Finger gesture recognition is gaining great research interest for wearable device interactions such as smartwatches and AR/VR headsets. In this paper, we propose a hands-free fine-grained finger gesture recognition system AO-Finger based on acoustic-optic sensor fusing. Specifically, we design a wristband with a modified stethoscope microphone and two high-speed optic motion sensors to capture signals generated from finger movements. We propose a set of natural, inconspicuous and effortless micro finger gestures that can be reliably detected from the complementary signals from both sensors. We design a multi-modal CNN-Transformer model for fast gesture recognition (flick/pinch/tap), and a finger swipe contact detection model to enable fine-grained swipe gesture tracking. We built a prototype which achieves an overall accuracy of 94.83% in detecting fast gestures and enables fine-grained continuous swipe gestures tracking. AO-Finger is practical for use as a wearable device and ready to be integrated into existing wrist-worn devices such as smartwatches.
+                    </p>
+                    <p>
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-	<center>
-	<iframe width="800" height="450" src="https://www.youtube.com/embed/pjpi0ikBLPE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<p style="font-size: 14px">
-	Fine-grained visual recognition for augmented reality enables dynamic presentation of right set of visual instructions in the rightcontext by analyzing the hardware state as the repair procedure evolves. (This work is published in IEEE ISMAR'20, accepted to IEEE TVCG special issue, 18 out of 302.)
-</p>
-	</center>
-</div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Fine-Grained Visual Recognition for AR Self-Assist Technical Support</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <iframe src="https://www.youtube.com/embed/pjpi0ikBLPE" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
+                    <a class="btn btn-primary btn-sm" href="pdf/ismar20.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> ISMAR'20</a>
+                    <!---<<a class="btn btn-primary btn-sm" href="" style="font-size:14px"><img src="images/ppt.png" width="18" /> Slides</a>
+                    </p></center>--->
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      Fine-grained visual recognition for augmented reality enables dynamic presentation of right set of visual instructions in the rightcontext by analyzing the hardware state as the repair procedure evolves. (This work is published in IEEE ISMAR'20, accepted to IEEE TVCG special issue, 18 out of 302.)
+                    </p>
+                    <p>
+                      <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a>
+                      <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a>
+                      <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a>
+                      <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -460,7 +507,7 @@ Ye<br>
                     <b>Fine-grained visual recognition in mobile augmented reality for technical support.</b><br>
                     <b>Bing Zhou</b>, Sinem Guven Kaya<br>
                     IEEE International Symposium on Mixed and Augmented Reality. <p style="color:red;"><b>[ Accepted to IEEE TVCG special issue, 18 out of 302, Acceptance rate 6%. ]</b></p>
-                    [<a target="_blank" href="" onClick="ga('send', 'event', 'Downloads', 'p2pfakefile.pdf', 'publication');">PDF</a>]
+                    [<a target="_blank" href="pdf/ismar20.pdf" onClick="ga('send', 'event', 'Downloads', 'p2pfakefile.pdf', 'publication');">PDF</a>]
                 </dd>
                 <dt class="conference"><b><a href="https://icc2019.ieee-icc.org/" class="nodec">ICC'19</a></b></dt>
                 <dd class="pubitem">
