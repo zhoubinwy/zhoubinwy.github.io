@@ -76,7 +76,7 @@
             <div class="row">
               <div class="col-md-12">
                 <p style="font-size: 16px; padding-left: 0px">
-                  I'm a staff research engineer at Snap Research NYC. Before that, I was a research staff member at IBM T.J. Watson Research Center, Yorktown Heights, NY. My research interests are mobile sensing and computing, human computer interaction, visual recognition, augmented reality and location based services. I obtained my PhD from ECE department, Stony Brook University in 2019. I received my Bachelor’s degree in Applied Physics from University of Science and Technology of China (USTC) in 2011 and master degree from Chinese Academy of Sciences in 2014.
+                                     I'm a staff research engineer at Snap Research NYC. My research interests focus on 3D human animation generation from various signals such as text, music, audio, and video, as well as human-centered video generation including audio-conditioned lip-synced video generation and background video generation for animations. I also work on 3D avatar/animal reconstruction and animation, 3D/4D content creation. Additionally, I explore human-centered sensing including sensor-based human pose tracking, hand gesture recognition from multimodal sensors, and data synthesizing using generative models. I am passionate about bridging the gap between multimodal AI understanding and realistic human motion synthesis for applications in entertainment, AR/VR, and digital human creation.
                   <br>
                   <br>
                   <!---<b> I will be on job market next summer and I'm actively looking for full-time positions both in industry and academia!</b>--->
@@ -196,13 +196,113 @@
 
             <div class="panel panel-default">
               <div class="panel-heading">
+                <h3 class="panel-title">SnapMoGen: Human Motion Generation from Expressive Texts</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <video class="img-responsive" height=100 autoplay muted loop controls>
+                      <source src="https://snap-research.github.io/SnapMoGen/static/video/demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-danger btn-sm" href="https://snap-research.github.io/SnapMoGen/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://www.arxiv.org/abs/2507.09122" style="font-size:14px"><img src="images/pdf.png" width="18" /> ArXiv'25</a>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/snap-research/SnapMoGen" style="font-size:14px"><img src="" width="18" /> Code</a>
+                    <a class="btn btn-primary btn-sm" href="https://huggingface.co/datasets/Ericguo5513/SnapMoGen" style="font-size:14px"><img src="" width="18" /> Dataset</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      SnapMoGen introduces a comprehensive dataset and framework for generating realistic human motions from rich, expressive text descriptions. Our approach addresses the challenge of creating diverse and contextually appropriate human movements by leveraging detailed textual annotations that capture nuanced motion characteristics. The system enables fine-grained control over motion generation, allowing users to specify complex movement patterns through natural language descriptions. This work represents a significant advancement in bridging the gap between textual understanding and physical motion synthesis, opening new possibilities for applications in animation, gaming, and virtual reality.
+                    </p>
+                    <p>
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">SceneMI: Motion In-betweening for Modeling Human-Scene Interaction</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <img src="https://inwoohwang.me/images/scenemi.gif" class="img-responsive" height=100 alt="SceneMI Demo">
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-danger btn-sm" href="http://inwoohwang.me/SceneMI"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2503.16289" style="font-size:14px"><img src="images/pdf.png" width="18" /> ICCV'25 Highlight</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      SceneMI tackles the challenging problem of generating realistic human motions that naturally interact with 3D environments. Our motion in-betweening approach enables seamless transitions between human poses while ensuring physically plausible interactions with scene objects and surfaces. The system understands spatial relationships and geometric constraints, generating motions that respect environmental boundaries and contact points. This work is particularly valuable for creating believable character animations in games, films, and virtual environments where humans must realistically navigate and interact with complex 3D scenes.
+                    </p>
+                    <p>
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">DuetGen: Music Driven Two-Person Dance Generation via Hierarchical Masked Modeling</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <video class="img-responsive" height=100 autoplay muted loop controls>
+                      <source src="https://anindita127.github.io/DuetGen/assets/supplementary_video_d.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-danger btn-sm" href="https://anindita127.github.io/DuetGen/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://arxiv.org/pdf/2506.18680" style="font-size:14px"><img src="images/pdf.png" width="18" /> SIGGRAPH'25</a>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/anindita127/DuetGen/" style="font-size:14px"><img src="" width="18" /> Code</a>
+                    <a class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=yebDWEiOM0s" style="font-size:14px"><img src="" width="18" /> Video</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      DuetGen revolutionizes the creation of synchronized two-person dance performances through advanced AI-driven choreography. Our innovative framework analyzes musical structure and rhythm to generate coordinated dance movements for pairs of dancers, ensuring both individual expression and seamless partner interaction. The system employs a sophisticated hierarchical approach that captures both global dance dynamics and fine-grained movement details. By understanding musical timing, tempo, and emotional content, DuetGen creates compelling duet performances that demonstrate natural coordination, creative choreography, and musical responsiveness across diverse dance styles and genres.
+                    </p>
+                    <p>
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
                 <h3 class="panel-title">MI-Poser: Human Body Pose Tracking Using Magnetic and Inertial Sensor Fusion with Metal Interference Mitigation</h3>
               </div>
               <div class="panel-body">
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="https://www.youtube.com/embed/2HG0Rbgpbs0?si=aQGvixEIT-bM2Wl9" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/2HG0Rbgpbs0?si=aQGvixEIT-bM2Wl9&autoplay=1&mute=1" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
@@ -233,7 +333,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="https://www.youtube.com/embed/n1Uw0ZCLNxQ" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/n1Uw0ZCLNxQ?autoplay=1&mute=1" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
@@ -264,7 +364,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="https://www.youtube.com/embed/pjpi0ikBLPE" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/pjpi0ikBLPE?autoplay=1&mute=1" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
@@ -295,7 +395,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="https://www.youtube.com/embed/MXRVVB4C-6w" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/MXRVVB4C-6w?autoplay=1&mute=1" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center>
                     <center><p style="padding-top: 20px">
                   </div>
@@ -321,7 +421,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="https://www.youtube.com/embed/4aaj5apA04U" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/4aaj5apA04U?autoplay=1&mute=1" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
@@ -354,7 +454,7 @@
                 <div class="row">
                   <div class="col-md-4">
                   	<center>
-                    <iframe class="img-responsive" height=100 src="https://www.youtube.com/embed/wthUzdKsTZc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="img-responsive" height=100 src="https://www.youtube.com/embed/wthUzdKsTZc?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 	</center>
                     <!---<img src="images/echoprint.png" class="img-responsive" height=100 alt="[CCM]"/>--->
                     <center><p style="padding-top: 20px">
@@ -386,7 +486,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe class="img-responsive" height=100 src="https://www.youtube.com/embed/JTManNRoHhs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="img-responsive" height=100 src="https://www.youtube.com/embed/JTManNRoHhs?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center>
                     <center><p style="padding-top: 20px">
                     <a class="btn btn-danger btn-sm" href="https://youtu.be/JTManNRoHhs"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>
@@ -445,7 +545,7 @@
                 <div class="row">
                   <div class="col-md-4">
                   <center>              
-                    <iframe class="img-responsive" height=100 src="https://www.youtube.com/embed/u_0ouc1kfnE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe class="img-responsive" height=100 src="https://www.youtube.com/embed/u_0ouc1kfnE?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                   </center> 
                     <!---<img src="images/batmapper.png" class="img-responsive" height=80 alt="[CCM]"/>--->
                     <center><p style="padding-top: 20px">
@@ -507,6 +607,34 @@
             </div>
             </h2>
             <dl class="dl-horizontal">
+
+                <dt class="conference"><b><a href="https://iccv2025.thecvf.com/" class="nodec">ICCV'25</a></b></dt>
+                 <dd class="pubitem">
+                     <b>SceneMI: Motion In-betweening for Modeling Human-Scene Interaction.</b><br>
+                     Inwoo Hwang, <b>Bing Zhou*</b>, Young Min Kim, Jian Wang, Chuan Guo*<br>
+                     In ICCV (Highlight), 2025. [<b>*</b> Co-corresponding and co-mentor]<br>
+                 </dd>
+
+                <dt class="conference"><b><a href="#" class="nodec">ICCV'25</a></b></dt>
+                 <dd class="pubitem">
+                     <b>Ponimator: Unfolding Interactive Pose for Versatile Human-human Interaction Animation.</b><br>
+                     Shaowei Liu, Chuan Guo, <b>Bing Zhou</b>, Jian Wang<br>
+                 </dd>
+
+               <dt class="conference"><b><a href="https://s2025.siggraph.org/" class="nodec">SIGGRAPH'25</a></b></dt>
+                <dd class="pubitem">
+                    <b>DuetGen: Music Driven Two-Person Dance Generation via Hierarchical Masked Modeling.</b><br>
+                    Anindita Ghosh, <b>Bing Zhou*</b>, Rishabh Dabral, Jian Wang, Vladislav Golyanik, Christian Theobalt, Philipp Slusallek, Chuan Guo*<br>
+                    In Proc. SIGGRAPH, 2025. [<b>*</b> Co-corresponding and co-mentor]<br>
+                    [<a target="_blank" href="https://arxiv.org/pdf/2506.18680" onClick="ga('send', 'event', 'Downloads', 'duetgen.pdf', 'publication');">PDF</a>]
+                </dd>
+
+               <dt class="conference"><b><a href="https://arxiv.org/" class="nodec">ArXiv'25</a></b></dt>
+                <dd class="pubitem">
+                    <b>SnapMoGen: Human Motion Generation from Expressive Texts.</b><br>
+                    Chuan Guo, Inwoo Hwang, Jian Wang, <b>Bing Zhou</b><br>
+                    In ArXiv, 2025.<br>
+                </dd>
 
                <dt class="conference"><b><a href="https://www.ubicomp.org/ubicomp-iswc-2023/cfp/imwut_papers/" class="nodec">IMWUT'23</a></b></dt>
                 <dd class="pubitem">
