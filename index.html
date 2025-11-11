@@ -209,7 +209,7 @@
                   </center>
                     <center><p style="padding-top: 20px">
                     <a class="btn btn-danger btn-sm" href="https://snap-research.github.io/SnapMoGen/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
-                    <a class="btn btn-primary btn-sm" href="https://www.arxiv.org/abs/2507.09122" style="font-size:14px"><img src="images/pdf.png" width="18" /> ArXiv'25</a>
+                    <a class="btn btn-primary btn-sm" href="https://www.arxiv.org/abs/2507.09122" style="font-size:14px"><img src="images/pdf.png" width="18" /> NeurIPS'25</a>
                     <a class="btn btn-primary btn-sm" href="https://github.com/snap-research/SnapMoGen" style="font-size:14px"><img src="" width="18" /> Code</a>
                     <a class="btn btn-primary btn-sm" href="https://huggingface.co/datasets/Ericguo5513/SnapMoGen" style="font-size:14px"><img src="" width="18" /> Dataset</a>
                     </p></center>
@@ -247,6 +247,37 @@
                   <div class="col-md-8">
                     <p style="font-size: 14px">
                       SceneMI tackles the challenging problem of generating realistic human motions that naturally interact with 3D environments. Our motion in-betweening approach enables seamless transitions between human poses while ensuring physically plausible interactions with scene objects and surfaces. The system understands spatial relationships and geometric constraints, generating motions that respect environmental boundaries and contact points. This work is particularly valuable for creating believable character animations in games, films, and virtual environments where humans must realistically navigate and interact with complex 3D scenes.
+                    </p>
+                    <p>
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a> -->
+                      <!-- <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Ponimator: Unfolding Interactive Pose for Versatile Human-Human Interaction Animation</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <img src="images/ponimator_teaser.gif" class="img-responsive" height=100 alt="Ponimator Demo">
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-danger btn-sm" href="https://stevenlsw.github.io/ponimator/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://arxiv.org/pdf/2510.14976" style="font-size:14px"><img src="images/pdf.png" width="18" /> ICCV'25</a>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/stevenlsw/ponimator" style="font-size:14px"><img src="" width="18" /> Code</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      Ponimator presents a novel framework for generating versatile human-human interaction animations anchored on interactive poses. Our approach leverages the rich contextual information conveyed by close-proximity interactive poses, using strong priors of human behavior to infer interaction dynamics and anticipate past and future motions. The system employs two conditional diffusion models: a pose animator that generates dynamic motion sequences from interactive poses using temporal priors, and a pose generator that synthesizes interactive poses from a single pose, text, or both using spatial priors. This versatile framework supports diverse tasks including image-based interaction animation, reaction animation, and text-to-interaction synthesis, effectively transferring interaction knowledge from high-quality motion-capture data to real-world scenarios.
                     </p>
                     <p>
                       <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
@@ -615,10 +646,14 @@
                      In ICCV (Highlight), 2025. [<b>*</b> Co-corresponding and co-mentor]<br>
                  </dd>
 
-                <dt class="conference"><b><a href="#" class="nodec">ICCV'25</a></b></dt>
+                <dt class="conference"><b><a href="https://iccv2025.thecvf.com/" class="nodec">ICCV'25</a></b></dt>
                  <dd class="pubitem">
-                     <b>Ponimator: Unfolding Interactive Pose for Versatile Human-human Interaction Animation.</b><br>
-                     Shaowei Liu, Chuan Guo, <b>Bing Zhou</b>, Jian Wang<br>
+                     <b>Ponimator: Unfolding Interactive Pose for Versatile Human-Human Interaction Animation.</b><br>
+                     Shaowei Liu, Chuan Guo*, <b>Bing Zhou*</b>, Jian Wang* [<b>*</b> Co-corresponding]<br>
+                     In ICCV, 2025.<br>
+                     [<a target="_blank" href="https://arxiv.org/abs/2503.16567" onClick="ga('send', 'event', 'Downloads', 'ponimator.pdf', 'publication');">PDF</a>]
+                     [<a target="_blank" href="https://stevenlsw.github.io/ponimator/" onClick="ga('send', 'event', 'Links', 'ponimator_project', 'publication');">Project Page</a>]
+                     [<a target="_blank" href="https://github.com/stevenlsw/ponimator" onClick="ga('send', 'event', 'Links', 'ponimator_code', 'publication');">Code</a>]
                  </dd>
 
                <dt class="conference"><b><a href="https://s2025.siggraph.org/" class="nodec">SIGGRAPH'25</a></b></dt>
@@ -629,11 +664,37 @@
                     [<a target="_blank" href="https://arxiv.org/pdf/2506.18680" onClick="ga('send', 'event', 'Downloads', 'duetgen.pdf', 'publication');">PDF</a>]
                 </dd>
 
-               <dt class="conference"><b><a href="https://arxiv.org/" class="nodec">ArXiv'25</a></b></dt>
+               <dt class="conference"><b><a href="https://arxiv.org/" class="nodec">NeurIPS'25</a></b></dt>
                 <dd class="pubitem">
                     <b>SnapMoGen: Human Motion Generation from Expressive Texts.</b><br>
                     Chuan Guo, Inwoo Hwang, Jian Wang, <b>Bing Zhou</b><br>
+                    In NeurIPS, 2025.<br>
+                </dd>
+
+               <dt class="conference"><b><a href="https://arxiv.org/" class="nodec">ArXiv'25</a></b></dt>
+                <dd class="pubitem">
+                    <b>Text2Interact: High-Fidelity and Diverse Text-to-Two-Person Interaction Generation.</b><br>
+                    Qingxuan Wu, Zhiyang Dou, Chuan Guo, Yiming Huang, Qiao Feng, <b>Bing Zhou</b>, Jian Wang, Lingjie Liu<br>
                     In ArXiv, 2025.<br>
+                    [<a target="_blank" href="https://arxiv.org/abs/2510.06504" onClick="ga('send', 'event', 'Downloads', 'text2interact.pdf', 'publication');">PDF</a>]
+                </dd>
+
+               <dt class="conference"><b><a href="https://arxiv.org/" class="nodec">ArXiv'25</a></b></dt>
+                <dd class="pubitem">
+                    <b>Dance Like a Chicken: Low-Rank Stylization for Human Motion Diffusion.</b><br>
+                    Haim Sawdayee, Chuan Guo, Guy Tevet, <b>Bing Zhou</b>, Jian Wang, Amit H. Bermano<br>
+                    In ArXiv, 2025.<br>
+                    [<a target="_blank" href="https://arxiv.org/abs/2503.19557" onClick="ga('send', 'event', 'Downloads', 'loramdm.pdf', 'publication');">PDF</a>]
+                    [<a target="_blank" href="https://haimsaw.github.io/LoRA-MDM/" onClick="ga('send', 'event', 'Links', 'loramdm_project', 'publication');">Project Page</a>]
+                </dd>
+
+               <dt class="conference"><b><a href="https://arxiv.org/" class="nodec">ArXiv'25</a></b></dt>
+                <dd class="pubitem">
+                    <b>A Survey on Human Interaction Motion Generation.</b><br>
+                    Kewei Sui, Anindita Ghosh, Inwoo Hwang, <b>Bing Zhou</b>, Jian Wang, Chuan Guo<br>
+                    In ArXiv, 2025.<br>
+                    [<a target="_blank" href="https://arxiv.org/abs/2503.12763" onClick="ga('send', 'event', 'Downloads', 'interaction_survey.pdf', 'publication');">PDF</a>]
+                    [<a target="_blank" href="https://github.com/soraproducer/Awesome-Human-Interaction-Motion-Generation" onClick="ga('send', 'event', 'Links', 'interaction_survey_repo', 'publication');">GitHub</a>]
                 </dd>
 
                <dt class="conference"><b><a href="https://www.ubicomp.org/ubicomp-iswc-2023/cfp/imwut_papers/" class="nodec">IMWUT'23</a></b></dt>
