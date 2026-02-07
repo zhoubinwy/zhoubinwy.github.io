@@ -21,6 +21,21 @@
     <!--link href="css/ionicons-stylesheet.css" rel="stylesheet"-->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/colorcodeicon.css" rel="stylesheet">
+    <style>
+      /* Unify project visual window size across img/gif/video/iframe */
+      .sectionProjects .panel-body .col-md-4 > center > img,
+      .sectionProjects .panel-body .col-md-4 > center > video,
+      .sectionProjects .panel-body .col-md-4 > center > iframe {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border: 0;
+      }
+      .sectionProjects .panel-body .col-md-4 > center > img.project-visual-contain {
+        object-fit: contain;
+        height: 220px;
+      }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -537,10 +552,11 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="images/mi-poser.gif" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <img src="images/mi-poser.gif" class="img-responsive project-visual-contain" alt="MI-Poser Demo" />
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
+                    <a class="btn btn-danger btn-sm" href="https://www.youtube.com/watch?v=bzklMFw6FEU"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>
                     <a class="btn btn-primary btn-sm" href="pdf/MI_Poser.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> IMWUT'23</a>
                     <!---<<a class="btn btn-primary btn-sm" href="" style="font-size:14px"><img src="images/ppt.png" width="18" /> Slides</a>
                     </p></center>--->
@@ -568,10 +584,11 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <iframe src="images/ao-finger.gif" class="img-responsive" height=100 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <img src="images/ao-finger.gif" class="img-responsive project-visual-contain" alt="AO-Finger Demo" />
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
+                    <a class="btn btn-danger btn-sm" href="https://www.youtube.com/watch?v=n1Uw0ZCLNxQ"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>
                     <a class="btn btn-primary btn-sm" href="pdf/ao-finger.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> CHI'23</a>
                     <!---<<a class="btn btn-primary btn-sm" href="" style="font-size:14px"><img src="images/ppt.png" width="18" /> Slides</a>
                     </p></center>--->
