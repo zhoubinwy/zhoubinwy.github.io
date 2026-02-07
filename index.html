@@ -22,18 +22,25 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/colorcodeicon.css" rel="stylesheet">
     <style>
-      /* Unify project visual window size across img/gif/video/iframe */
+      /* Keep visuals responsive without distorting aspect ratio */
       .sectionProjects .panel-body .col-md-4 > center > img,
-      .sectionProjects .panel-body .col-md-4 > center > video,
+      .sectionProjects .panel-body .col-md-4 > center > video {
+        width: 100%;
+        height: auto;
+      }
+
+      /* If we still use iframes (e.g., YouTube), give them a reasonable ratio */
       .sectionProjects .panel-body .col-md-4 > center > iframe {
         width: 100%;
-        height: 170px;
-        object-fit: cover;
+        aspect-ratio: 16 / 9;
+        height: auto;
         border: 0;
       }
+
+      /* Optional: make GIFs a bit larger but still proportional */
       .sectionProjects .panel-body .col-md-4 > center > img.project-visual-contain {
+        max-height: 220px;
         object-fit: contain;
-        height: 220px;
       }
     </style>
   </head>
