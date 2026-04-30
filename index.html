@@ -89,9 +89,9 @@
                    style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid #777;color:black;text-decoration:none;">
                   <i class="fa fa-file-text-o" aria-hidden="true"></i>
                 </a>
-                <a href="mailto:bzhou@snapchat.com" title="Email" aria-label="Email"
+                <a href="mailto:zhoubinwy@gmail.com" title="Email" aria-label="Email"
                    style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid #777;color:black;text-decoration:none;cursor:pointer;"
-                   onclick="window.location.href='mailto:bzhou@snapchat.com'; return false;">
+                   onclick="window.location.href='mailto:zhoubinwy@gmail.com'; return false;">
                   <span class="ios ion-ios-email-outline fa-lg" aria-hidden="true"></span>
                 </a>
                 <a href="https://goo.gl/maps/yFV9DkoCVaoJjk9g9" title="Location" aria-label="Location"
@@ -232,6 +232,56 @@
 
             <div class="panel panel-default">
               <div class="panel-heading">
+                <h3 class="panel-title">HandX: Scaling Bimanual Motion and Interaction Generation</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <img src="images/handx.gif" class="img-responsive" height=100 alt="HandX"/>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-primary btn-sm" href="pdf/handx.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> CVPR'26</a>
+                    <a class="btn btn-danger btn-sm" href="https://handx-project.github.io/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/handx-project/HandX" style="font-size:14px"><img src="images/git.png" width="18" /> Code</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      We present HandX, a unified framework for realistic hand and bimanual motion generation. It combines curated and newly collected high-quality motion-capture data with detailed finger dynamics, a scalable LLM-based annotation pipeline, and hand-focused evaluation metrics. Built on this foundation, we benchmark diffusion and autoregressive models, showing improved dexterous motion generation and clear scaling benefits with larger, higher-quality data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">RigMo: Unifying Rig and Motion Learning for Generative Animation</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <img src="images/rigmo.gif" class="img-responsive" height=100 alt="RigMo"/>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-primary btn-sm" href="pdf/rigmo.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> CVPR'26</a>
+                    <a class="btn btn-danger btn-sm" href="https://rigmo-page.github.io/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://rigmo-page.github.io/" style="font-size:14px"><img src="images/git.png" width="18" /> Code (coming soon)</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      TLDR: Rigging and motion should not be learned in isolation! RigMo is the first generative framework that discovers both rig structure and motion dynamics directly from raw mesh sequences without ground-truth rigs, skeletons, or per-sequence optimization. By factorizing deformation into explicit Gaussian bones and structure-aware motion, RigMo turns arbitrary deforming meshes into fully animatable assets: feed-forward, interpretable, and scalable across categories.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
                 <h3 class="panel-title">TalkVerse: Democratizing Minute-Long Audio-Driven Video Generation</h3>
               </div>
               <div class="panel-body">
@@ -241,9 +291,9 @@
                     <img src="images/teaser-talkverse.jpg" class="img-responsive" height=100 alt="TalkVerse"/>
                   </center>
                     <center><p style="padding-top: 20px">
+                    <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2512.14938" style="font-size:14px"><img src="images/pdf.png" width="18" /> CVPR'26 Findings</a>
                     <a class="btn btn-danger btn-sm" href="https://zhenzhiwang.github.io/talkverse/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
-                    <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2512.14938" style="font-size:14px"><img src="images/pdf.png" width="18" /> arXiv</a>
-                    <a class="btn btn-primary btn-sm" href="https://github.com/snap-research/TalkVerse" style="font-size:14px"><img src="" width="18" /> Code (coming soon)</a>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/snap-research/TalkVerse" style="font-size:14px"><img src="images/git.png" width="18" /> Code (coming soon)</a>
                     </p></center>
                   </div>
                   <div class="col-md-8">
@@ -251,10 +301,6 @@
                       TalkVerse is a large-scale, open corpus for single-person, audio-driven talking video generation comprising 2.3M clips and 6.3k hours of curated video data. We present a 5B-parameter diffusion transformer (DiT) baseline that achieves minute-long generation with low drift and approximately 10x lower inference cost compared to larger commercial models. The corpus is curated from over 60k hours of general video through a transparent and reproducible pipeline that includes scene-cut detection, human and subtitle screening, aesthetic and quality assessment, audio-visual synchronization, and language annotation. Our approach maintains strong lip-sync quality and long-horizon video consistency while generalizing zero-shot to video dubbing tasks via controlled latent noise. The system demonstrates robust performance across diverse languages including English, Chinese, Spanish, and supports various content types from standard speech to singing and musical performances, as well as stylized cartoon and anime domains.
                     </p>
                     <p>
-                      <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
-                      <!-- <a class="btn btn-default btn-sm"><img src="images/Python.png" width="14" /> Python</a> -->
-                      <!-- <a class="btn btn-default btn-sm"><img src="images/tensorflow.png" width="14" /> TensorFlow</a> -->
-                      <!-- <a class="btn btn-default btn-sm"><img src="images/xcode.png" width="18" /> iOS</a> -->
                     </p>
                   </div>
                 </div>
@@ -553,13 +599,36 @@
 
             <div class="panel panel-default">
               <div class="panel-heading">
+                <h3 class="panel-title">Perspective-Aligned AR Mirror with Under-Display Camera</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <center>
+                    <img src="images/ar_mirror.gif" class="img-responsive" height=100 alt="AR Mirror"/>
+                  </center>
+                    <center><p style="padding-top: 20px">
+                    <a class="btn btn-primary btn-sm" href="pdf/rigmo.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> SigGraph Asia'24</a>
+                    </p></center>
+                  </div>
+                  <div class="col-md-8">
+                    <p style="font-size: 14px">
+                      We present a novel approach to address this problem by placing the camera behind a transparent display, thereby providing users with a perspective-aligned experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
                 <h3 class="panel-title">MI-Poser: Human Body Pose Tracking Using Magnetic and Inertial Sensor Fusion with Metal Interference Mitigation</h3>
               </div>
               <div class="panel-body">
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <img src="images/mi-poser.gif" class="img-responsive project-visual-contain" alt="MI-Poser Demo" />
+                    <img src="images/mi-poser.gif" class="img-responsive" height=100 alt="MI-Poser Demo" />
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
@@ -591,7 +660,7 @@
                 <div class="row">
                   <div class="col-md-4">
                     <center>
-                    <img src="images/ao-finger.gif" class="img-responsive project-visual-contain" alt="AO-Finger Demo" />
+                    <img src="images/ao-finger.gif" class="img-responsive" height=100 alt="AO-Finger Demo" />
                   </center>
                     <center><p style="padding-top: 20px">
                     <!---<a class="btn btn-danger btn-sm" href="https://youtu.be/u_0ouc1kfnE"><i class="ios ion-ios-film-outline fa-lg"></i> Video</a>--->
