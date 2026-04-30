@@ -42,6 +42,46 @@
         max-height: 220px;
         object-fit: contain;
       }
+
+      /* Make project cards compact: two per row on desktop */
+      .sectionProjects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .sectionProjects > h2 {
+        width: 100%;
+      }
+
+      .sectionProjects > .panel {
+        width: calc(50% - 6px);
+        margin: 0;
+      }
+
+      /* Stack visual and description vertically inside each card */
+      .sectionProjects .panel-body .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .sectionProjects .panel-body .col-md-4,
+      .sectionProjects .panel-body .col-md-8 {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .sectionProjects .panel-body p {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 991px) {
+        .sectionProjects > .panel {
+          width: 100%;
+        }
+      }
     </style>
   </head>
 
@@ -127,7 +167,7 @@
 
     <div class="container-fluid" style="color:black; padding: 30px; padding-top: 0px">
       <div class="row">
-        <div class="col-md-3" style="padding-right: 50px">
+        <div class="col-md-2" style="padding-right: 30px">
           <div class="sectionNews">
             <h2 id="news" class="page-header"><i class="ios ion-ios-paper-outline fa-lg"></i> News</h2>
             <div style="font-size: 14px;">
@@ -226,7 +266,7 @@
         </div>
         
 
-        <div class="col-md-9">
+        <div class="col-md-10">
           <div class="sectionProjects">
             <h2 id="projects" class="page-header"><i class="ios ion-ios-pulse fa-lg"></i> Projects</h2>
 
@@ -318,7 +358,9 @@
                     <img src="images/guidance.gif" class="img-responsive" height=100 alt="Unleashing Guidance"/>
                   </center>
                     <center><p style="padding-top: 20px">
-                    <a class="btn btn-primary btn-sm" href="" style="font-size:14px"><img src="images/pdf.png" width="18" /> ICLR'26 (paper coming soon)</a>
+                    <a class="btn btn-primary btn-sm" href="pdf/Unleashing Guidance Without Classifiers for Human-Object Interaction Animation.pdf" style="font-size:14px"><img src="images/pdf.png" width="18" /> ICLR'26</a>
+                    <a class="btn btn-danger btn-sm" href="https://ziyinwang1.github.io/LIGHT/"><i class="ios ion-ios-film-outline fa-lg"></i> WebPage</a>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/wzyabcas/LIGHT" style="font-size:14px"><img src="images/git.png" width="18" /> Code</a>
                     </p></center>
                   </div>
                   <div class="col-md-8">
@@ -549,7 +591,7 @@
                   </div>
                   <div class="col-md-8">
                     <p style="font-size: 14px">
-                      Ponimator presents a novel framework for generating versatile human-human interaction animations anchored on interactive poses. Our approach leverages the rich contextual information conveyed by close-proximity interactive poses, using strong priors of human behavior to infer interaction dynamics and anticipate past and future motions. The system employs two conditional diffusion models: a pose animator that generates dynamic motion sequences from interactive poses using temporal priors, and a pose generator that synthesizes interactive poses from a single pose, text, or both using spatial priors. This versatile framework supports diverse tasks including image-based interaction animation, reaction animation, and text-to-interaction synthesis, effectively transferring interaction knowledge from high-quality motion-capture data to real-world scenarios.
+                      Ponimator presents a novel framework for generating versatile human-human interaction animations anchored on interactive poses. Our approach leverages the rich contextual information conveyed by close-proximity interactive poses, using strong priors of human behavior to infer interaction dynamics and anticipate past and future motions. The system employs two conditional diffusion models: a pose animator that generates dynamic motion sequences from interactive poses using temporal priors, and a pose generator that synthesizes interactive poses from a single pose, text, or both using spatial priors.
                     </p>
                     <p>
                       <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
@@ -639,7 +681,7 @@
                   </div>
                   <div class="col-md-8">
                     <p style="font-size: 14px">
-                      Inside-out tracking of human body poses using wearable sensors holds significant potential for AR/VR applications, such as remote communication through 3D avatars with expressive body language. Current inside-out systems often rely on vision-based methods utilizing handheld controllers or incorporating densely distributed body-worn IMU sensors. The former limits hands-free and occlusion-robust interactions, while the latter is plagued by inadequate accuracy and jittering. We introduce a novel body tracking system, MI-Poser, which employs AR glasses and two wrist-worn electromagnetic field (EMF) sensors to achieve high-fidelity upper-body pose estimation while mitigating metal interference. Our lightweight system demonstrates a minimal error (6.6 cm mean joint position error) with real-world data collected from 10 participants. It remains robust against various upper-body movements and operates efficiently at 60 Hz. Furthermore, by incorporating an IMU sensor co-located with the EMF sensor, MI-Poser presents solutions to counteract the effects of metal interference, which inherently disrupts the EMF signal during tracking. Our evaluation effectively showcases the successful detection and correction of interference using our EMF-IMU fusion approach across environments with diverse metal profiles. Ultimately, MI-Poser offers a practical pose tracking system, particularly suited for body-centric AR applications. Watch the full video <a href="https://www.youtube.com/watch?v=bzklMFw6FEU">here</a>.
+                      We introduce a novel body tracking system, MI-Poser, which employs AR glasses and two wrist-worn electromagnetic field (EMF) sensors to achieve high-fidelity upper-body pose estimation while mitigating metal interference. Our lightweight system demonstrates a minimal error (6.6 cm mean joint position error) with real-world data collected from 10 participants. It remains robust against various upper-body movements and operates efficiently at 60 Hz. Furthermore, by incorporating an IMU sensor co-located with the EMF sensor, MI-Poser presents solutions to counteract the effects of metal interference, which inherently disrupts the EMF signal during tracking. Watch the full video <a href="https://www.youtube.com/watch?v=bzklMFw6FEU">here</a>.
                     </p>
                     <p>
                       <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
@@ -671,7 +713,7 @@
                   </div>
                   <div class="col-md-8">
                     <p style="font-size: 14px">
-                      Finger gesture recognition is gaining great research interest for wearable device interactions such as smartwatches and AR/VR headsets. In this paper, we propose a hands-free fine-grained finger gesture recognition system AO-Finger based on acoustic-optic sensor fusing. Specifically, we design a wristband with a modified stethoscope microphone and two high-speed optic motion sensors to capture signals generated from finger movements. We propose a set of natural, inconspicuous and effortless micro finger gestures that can be reliably detected from the complementary signals from both sensors. We design a multi-modal CNN-Transformer model for fast gesture recognition (flick/pinch/tap), and a finger swipe contact detection model to enable fine-grained swipe gesture tracking. We built a prototype which achieves an overall accuracy of 94.83% in detecting fast gestures and enables fine-grained continuous swipe gestures tracking. AO-Finger is practical for use as a wearable device and ready to be integrated into existing wrist-worn devices such as smartwatches.
+                      We design a wristband with a modified stethoscope microphone and two high-speed optic motion sensors to capture signals generated from finger movements. We propose a set of natural, inconspicuous and effortless micro finger gestures that can be reliably detected from the complementary signals from both sensors. We design a multi-modal CNN-Transformer model for fast gesture recognition (flick/pinch/tap), and a finger swipe contact detection model to enable fine-grained swipe gesture tracking. We built a prototype which achieves an overall accuracy of 94.83% in detecting fast gestures and enables fine-grained continuous swipe gestures tracking. AO-Finger is practical for use as a wearable device and ready to be integrated into existing wrist-worn devices such as smartwatches.
                     </p>
                     <p>
                       <!-- <a class="btn btn-default btn-sm"><img src="images/swift.png" width="16" /> Swift</a> -->
@@ -836,8 +878,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
           <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">BatTracker: High Precision Infrastructure-free Mobile Device Tracking in Indoor Environments</h3>
@@ -927,6 +967,8 @@
                 </div>
               </div>
             </div>
+
+          </div>
 
           <div class="sectionPublications">
             <h2 id="publications" class="page-header"><i class="ios ion-ios-book-outline fa-lg"></i> Publications
