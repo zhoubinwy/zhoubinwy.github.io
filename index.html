@@ -86,12 +86,35 @@
           width: 100%;
         }
       }
+
+      /* Runway-inspired top navigation */
+      .navbar-runway {
+        background-color: #0d0d0d;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .navbar-runway .navbar-brand,
+      .navbar-runway .nav > li > a {
+        color: #f5f5f5 !important;
+      }
+
+      .navbar-runway .nav > li > a:hover,
+      .navbar-runway .nav > li > a:focus,
+      .navbar-runway .navbar-brand:hover,
+      .navbar-runway .navbar-brand:focus {
+        color: #ffffff !important;
+        background-color: rgba(255, 255, 255, 0.06);
+      }
+
+      .navbar-runway .navbar-toggle .icon-bar {
+        background-color: #f5f5f5;
+      }
     </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
 
-    <div class="navbar navbar-fixed-top navbar-light" style="background-color: #ffff00;">
+    <div class="navbar navbar-fixed-top navbar-runway">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
@@ -101,16 +124,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a href="#home" style="color:black" class="navbar-brand"><i class="ios ion-ios-home-outline fa-lg"></i> Home</a>
+              <a href="#home" class="navbar-brand"><i class="ios ion-ios-home-outline fa-lg"></i> Home</a>
             </div>
           </div>
           <div class="col-md-9">
             <div class="navbar-collapse collapse" id="navbar-main">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#news" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'news']);"><span class="ios ion-ios-paper-outline fa-lg"></span> News</a></li>
-                <li><a href="#projects" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'projects']);"><span class="ios ion-ios-pulse fa-lg"></span> Projects</a></li>
-                <li><a href="#publications" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'publications']);"><span class="ion-ios-book-outline fa-lg"></span> Publications</a></li>
-                <li><a href="#work" style="color:black" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'work']);"><span class="ios ion-ios-people-outline fa-lg"></span> Work Experience</a></li>
+                <li><a href="#news" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'news']);"><span class="ios ion-ios-paper-outline fa-lg"></span> News</a></li>
+                <li><a href="#projects" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'projects']);"><span class="ios ion-ios-pulse fa-lg"></span> Projects</a></li>
+                <li><a href="#publications" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'publications']);"><span class="ion-ios-book-outline fa-lg"></span> Publications</a></li>
+                <li><a href="#work" class="btn btn-outline" onclick="_gaq.push(['_trackEvent', 'button', 'clicked', 'work']);"><span class="ios ion-ios-people-outline fa-lg"></span> Work Experience</a></li>
               </ul>
             </div>
           </div>
@@ -156,7 +179,7 @@
                   Building human-centered generative and sensing systems.
                 </h3>
                 <p style="font-size: 16px; padding-left: 0px">
-                                     I'm a staff research engineer at Snap Research NYC. My research interests focus on <b>human-centered video/audio generation</b> including audio-conditioned lip-synced video generation, background video generation for animations, and video-audio joint generation, as well as <b>3D human animation generation</b> from various signals such as text, music, audio, and video. I also work on <b>3D avatar reconstruction and animation</b>, 3D/4D content creation. Additionally, I had worked on <b>human-centered sensing</b> including sensor-based human pose tracking, hand gesture recognition from multimodal sensors, and data synthesizing using generative models. I am passionate about bridging the gap between multimodal AI understanding and realistic human synthesis for applications in entertainment, AR/VR, and digital human creation.
+                                     I'm a Member of Technical Staff at <a href="https://runwayml.com/product">Runway</a>. My research interests focus on <b>human-centered video/audio generation</b> including audio-conditioned lip-synced video generation, background video generation for animations, and video-audio joint generation, as well as <b>3D human animation generation</b> from various signals such as text, music, audio, and video. I also work on <b>3D avatar reconstruction and animation</b>, 3D/4D content creation. Additionally, I had worked on <b>human-centered sensing</b> including sensor-based human pose tracking, hand gesture recognition from multimodal sensors, and data synthesizing using generative models. I am passionate about bridging the gap between multimodal AI understanding and realistic human synthesis for applications in entertainment, AR/VR, and digital human creation.
                   <br>
                   <br>
                   <!---<b> I will be on job market next summer and I'm actively looking for full-time positions both in industry and academia!</b>--->
@@ -176,6 +199,10 @@
             <h2 id="news" class="page-header"><i class="ios ion-ios-paper-outline fa-lg"></i> News</h2>
             <div style="font-size: 14px;">
               <ul class="nav nav-list">
+                <li style="color: black">
+                  <strong>Jun 2026</strong><br>
+                  <p>New journey begins at Runway as Member of Technical Staff.</p>
+                </li>
                 <li style="color: black">
                   <strong>Oct 11, 2021</strong><br>
                   <p>New journey begins in Snap Research.</p>
@@ -1265,6 +1292,18 @@ Ye<br>
             <h2 id="work" class="page-header"><i class="ios ion-ios-people-outline fa-lg"></i> Work Experience</h2>
             <dl class="dl-horizontal">
 
+              <dt><a href="https://runwayml.com/">
+                    <img src="images/runway.png" style="width: 140px; padding: 0px 0 0 0px;" alt="Runway" />
+                  </a>
+              </dt>
+              <dd>
+                <div style="margin-bottom: 6px;">
+                  Member of Technical Staff<span style="margin-left:48px"></span>
+                  <a class="btn btn-default btn-xs"><i class="ios ion-ios-timer-outline fa-lg"></i> Jun 2026 - Present</a>
+                </div>
+              </dd>
+              <br>
+
               <dt><a href="https://research.snap.com/">
                     <img src="images/snapchat.png" style="width: 140px; padding: 0px 0 0 0px;" />
                   </a>
@@ -1272,11 +1311,11 @@ Ye<br>
               <dd>
                 <div style="margin-bottom: 6px;">
                   Staff Research Engineer<span style="margin-left:90px"></span>
-                  <a class="btn btn-default btn-xs"><i class="ios ion-ios-timer-outline fa-lg"></i> 2024 - Present</a>
+                  <a class="btn btn-default btn-xs"><i class="ios ion-ios-timer-outline fa-lg"></i> Oct 2024 - Apr 2026</a>
                 </div>
                 <div>
                   Senior Research Engineer<span style="margin-left:94px"></span>
-                  <a class="btn btn-default btn-xs"><i class="ios ion-ios-timer-outline fa-lg"></i> 2021 - 2024</a>
+                  <a class="btn btn-default btn-xs"><i class="ios ion-ios-timer-outline fa-lg"></i> Oct 2021 - Oct 2024</a>
                 </div>
               </dd>
               <br>
